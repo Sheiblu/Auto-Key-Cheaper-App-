@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/white"
+    tools:context="com.example.general.autokey.Decryption"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="87dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.03"
+        android:background="@drawable/decryption"
+        android:textSize="35dp" />
+
+    <EditText
+        android:id="@+id/tbCipher1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cipher Text"
+        android:textSize="20dp"
+        android:inputType="textPersonName"
+        android:layout_margin="15dp"
+        />
+
+    <EditText
+        android:id="@+id/tbKey1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="20dp"
+        android:hint=" Key  range(1-26)"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:text="P'Text: "
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/tbPlain1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="will show"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btBack1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/back"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btDecrypt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:text="Decrypt"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/btClean1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/clear"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

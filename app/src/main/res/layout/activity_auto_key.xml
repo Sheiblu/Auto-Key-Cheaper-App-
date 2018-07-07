@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/board"
+    tools:context="com.example.general.autokey.AutoKey"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:textStyle="italic"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_weight="0.06"
+        android:text=" AutoKey Chiper"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        tools:backgroundTint="@mipmap/ic_launcher" />
+
+    <Button
+        android:id="@+id/btEncryption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:text="Encryption"
+        android:textSize="20dp"
+        android:textStyle="" />
+
+    <Button
+        android:id="@+id/btDecryption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="Decryption" />
+
+    <Button
+        android:id="@+id/btExit"
+        android:layout_width="43dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/exit"
+        android:layout_gravity="center"
+         />
+
+
+</LinearLayout>

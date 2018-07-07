@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/white"
+    tools:context="com.example.general.autokey.Encryption"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="87dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/encription" />
+
+    <EditText
+        android:id="@+id/tbPlain2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Plain Text"
+        android:textSize="20dp"
+        android:inputType="textPersonName"
+        android:layout_margin="15dp"
+         />
+
+    <EditText
+        android:id="@+id/tbKey2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="20dp"
+        android:hint=" Key  range(1-26)"
+        android:inputType="number" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:text="C'Text: "
+        android:textColor="@android:color/black"
+        />
+    <TextView
+        android:id="@+id/tbCipher2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:hint="Cipher Text will show"
+        android:textSize="20dp"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btBack2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/back" />
+
+        <Button
+            android:id="@+id/btEncrypt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:text="Encrypt"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/btClean2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/clear"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
